@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("/assets/fonts/Vazirmatn-RD.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+html {
+  direction: rtl;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: "Vazirmatn", Tahoma, Arial, sans-serif !important;
+}
+
+body {
+  text-align: right;
+}
+
+.brand strong,
+.info-panel h1,
+.card h3,
+.organ-item strong,
+.specimen-stamp,
+.view-caption strong {
+  font-family: "Vazirmatn", Tahoma, Arial, sans-serif !important;
+}
+
+.brand strong,
+.info-panel h1 {
+  letter-spacing: -0.045em;
+}
+
+.workspace,
+.topbar,
+.main-nav,
+.organ-item,
+.info-title-row,
+.action-grid,
+.learning-cards,
+.modal-facts,
+.compare-strip {
+  direction: rtl;
+}
+
+.viewer-shell,
+.three-mount,
+.model-loader,
+.hotspot-index {
+  direction: ltr;
+}
+
+.viewer-tools,
+.tip-note,
+.view-caption,
+.hotspot-callout,
+.auto-rotate {
+  direction: rtl;
+  text-align: right;
+}
+
+.viewer-tools button,
+.action-grid button,
+.lesson-button,
+.view-all,
+.card button {
+  letter-spacing: 0;
+}
+
+.arrow-right,
+.lucide-arrow-right {
+  transform: scaleX(-1);
+}
+
+.search-box input {
+  text-align: right;
+}
+
+.info-panel p,
+.medical-note,
+.fun-note,
+.card p,
+.card li,
+.modal-dialog p,
+.modal-dialog dd {
+  line-height: 1.75;
+}
+
+.key-facts dt,
+.key-facts dd,
+.modal-facts dt,
+.modal-facts dd {
+  text-align: right;
+}
+
+@media (max-width: 980px) {
+  .workspace,
+  .topbar,
+  .learning-cards {
+    direction: rtl;
+  }
+}
+
