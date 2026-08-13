@@ -106,3 +106,42 @@ body {
   }
 }
 
+/* Intro credit splash */
+body::before,
+body::after {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  animation: atelier-credit-splash 2.45s cubic-bezier(.22,.7,.2,1) forwards;
+}
+
+body::before {
+  content: "";
+  z-index: 99998;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(255,255,255,.92), rgba(247,240,231,.98) 44%, #eee4d8 100%);
+}
+
+body::after {
+  content: "ساخته شده توسط pvEunoia\A برای دیجیاتو";
+  z-index: 99999;
+  display: grid;
+  place-items: center;
+  white-space: pre-line;
+  text-align: center;
+  direction: rtl;
+  color: #342d28;
+  font-family: "Vazirmatn", Tahoma, Arial, sans-serif;
+  font-size: clamp(15px, 2vw, 21px);
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: -.02em;
+  text-shadow: 0 1px 0 rgba(255,255,255,.75);
+}
+
+@keyframes atelier-credit-splash {
+  0% { opacity: 0; visibility: visible; }
+  14% { opacity: 1; }
+  72% { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; }
+}
